@@ -10,7 +10,7 @@ local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
     Name = "WarSpawn|Exeploits",
     LoadingTitle = "Loading Quick ExePloits",
-    LoadingSubtitle = "by Sonic|Exeploits",
+    LoadingSubtitle = "by Sonic|ExePloits",
     ConfigurationSaving = {
         Enabled = true,
         FolderName = "RayfieldConfigs",
@@ -69,8 +69,7 @@ local carnivores = {
     "Avinychus", "Classic Avinychus", "Inverted Avinychus", "Glass Avinychus",
     "Gelioichthys", "Inverted Gelioichthys", "Scyllaβ", "DA Tyrannosaurus Rex",
     "Kaiju Spinofaarus", "Inverted Spinofaarus", "Carcharodontosaurus", "Headlessaurus",
-    "Alpha Kaiju Spinosaurus", "Saurophaganax", "Cryptic Saurophaganax", "Kaiju Archelon",
-    "Tarbosaurus", "Zweinova-Blank"
+    "Alpha Kaiju Spinosaurus", "Saurophaganax", "Cryptic Saurophaganax", "Kaiju Archelon"
 }
 
 for i, dinoName in ipairs(carnivores) do
@@ -87,7 +86,7 @@ end
 local AnklyBitersTab = Window:CreateTab("Ankly Biters", 4483362458)
 
 -- Ankly Biters Section
-local Ankly BitersSection = AnklyBitersTab:CreateSection("Ankly Biters")
+local AnklyBitersSection = AnklyBitersTab:CreateSection("Ankly Biters")
 
 local anklyBiters = {
     "Yandusaurus", "Kosmoceratops", "Caveman 2", "Caveman Grug", "Callichimaera", 
@@ -98,7 +97,7 @@ local anklyBiters = {
 
 for i, dinoName in ipairs(anklyBiters) do
     AnklyBitersTab:CreateButton({
-        Section = Ankly BitersSection,
+        Section = AnklyBitersSection,
         Name = dinoName,
         Callback = function()
             spawnDinosaur(dinoName)
@@ -107,10 +106,10 @@ for i, dinoName in ipairs(anklyBiters) do
 end
 
 -- Create a new tab for Aquatic Dinos
-local Aquatic DinosTab = Window:CreateTab("Aquatic Dinos", 4483362458)
+local AquaticDinosTab = Window:CreateTab("Aquatic Dinos", 4483362458)
 
 -- Aquatic Dinos Section
-local Aquatic DinosSection = Aquatic DinosTab:CreateSection("Aquatic Dinos")
+local AquaticDinosSection = AquaticDinosTab:CreateSection("Aquatic Dinos")
 
 local aquaticDinos = {
     "Shastasaurus", "Carcharocles Megalodon", "Clamarocles Megalodon", "Classic Carcharocles Megalodon",
@@ -120,7 +119,7 @@ local aquaticDinos = {
 }
 
 for i, dinoName in ipairs(aquaticDinos) do
-    AquaticDinosSection:CreateButton({
+    AquaticDinosTab:CreateButton({
         Section = AquaticDinosSection,
         Name = dinoName,
         Callback = function()
